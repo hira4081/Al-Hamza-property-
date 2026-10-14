@@ -45,7 +45,6 @@ function CountUp({
 }
 
 const STATS = [
-  { label: "Sold", node: <CountUp value={185} prefix="PKR " suffix=" Cr+ Sold" /> },
   { label: "Homes", node: <CountUp value={320} suffix="+ Homes" /> },
   { label: "Years", node: <CountUp value={15} suffix=" Years" /> },
   {
@@ -63,11 +62,11 @@ const STATS = [
 export function StatsStrip() {
   return (
     <section className="bg-surface-dark">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 divide-y divide-primary/40 sm:grid-cols-4 sm:divide-x sm:divide-y-0">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 divide-y divide-primary/40 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
         {STATS.map((stat) => (
           <div
             key={stat.label}
-            className="flex min-h-[90px] items-center justify-center px-4 py-6 text-center"
+            className="flex min-h-[90px] items-center justify-center px-4 py-6 text-center last:col-span-2 sm:last:col-span-1"
           >
             <p className="font-display text-xl font-semibold italic text-background sm:text-2xl">
               {stat.node}

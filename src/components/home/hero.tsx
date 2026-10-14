@@ -48,7 +48,7 @@ export function Hero() {
             {SITE.phone}
           </a>
           <p className="mt-8 text-sm font-medium text-background/80">
-            PKR 185 Cr+ sold · 15 yrs experience · 4.9 Google
+            15 yrs experience · 4.9 Google
           </p>
         </div>
         <motion.div

@@ -6,7 +6,10 @@ export const SITE = {
   phone: "+92 335 2713961",
   phoneHref: "tel:+923352713961",
   whatsappHref: "https://wa.me/923352713961",
-  address: "Scheme 33, Superhighway, Karachi",
+  address: "Capital Society, Scheme 33, Superhighway, Karachi",
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Capital+Cooperative+Housing+Society+Scheme+33+Karachi",
+  mapEmbedUrl:
+    "https://www.google.com/maps?q=Capital+Cooperative+Housing+Society+Scheme+33+Karachi&output=embed",
   ombudsman: "Al Hamza Properties. Registered in Pakistan.",
   copyright: "© 2026 Al Hamza Properties",
 } as const;

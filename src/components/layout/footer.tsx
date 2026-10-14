@@ -76,6 +76,24 @@ export function Footer() {
               <span>{SITE.address}</span>
             </li>
           </ul>
+          <div className="mt-5 overflow-hidden rounded-xl ring-1 ring-primary/25">
+            <iframe
+              title="Al Hamza Properties location — Capital Society, Karachi"
+              src={SITE.mapEmbedUrl}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-44 w-full border-0"
+            />
+          </div>
+          <a
+            href={SITE.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+          >
+            <MapPin className="size-4" />
+            Open in Google Maps
+          </a>
         </div>
       </div>
       <div className="border-t border-background/10">
